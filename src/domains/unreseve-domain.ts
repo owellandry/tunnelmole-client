@@ -8,8 +8,7 @@ interface UnReserveDomainRequest {
 }
 
 const unreserveDomain = async function(subdomain: string): Promise<void> {
-   subdomain = subdomain.replace(".tunnelmole.net", "");
-   subdomain = subdomain.replace(".tunnelmole.com", "");
+   subdomain = subdomain.replace(".rurylox.site", "");
 
    const unreserveDomainEndpoint = `${config.hostip.httpEndpoint}/tunnelmole/unreserve-subdomain`;
 

@@ -8,7 +8,7 @@ Tunnelmole is a simple tool to give your locally running HTTP(s) servers a publi
 - A React or node application
 - A static website
 
-So, you could have your application running locally on port `8080`, then by running `tmole 8080` you could have a URL such as `https://df34.tunnelmole.net` routing to your locally running application.
+So, you could have your application running locally on port `8080`, then by running `tmole 8080` you could have a URL such as `https://df34.rurylox.site` routing to your locally running application.
 
 ### Quick Demo
 *Getting a Public URL for the Tunnelmole Website, which is running locally*
@@ -39,12 +39,12 @@ Alternatively you can install the latest precompiled binary for your platform. T
 #### Linux, Mac and Windows Subsystem for Linux
 Copy and paste the following into a terminal:
 ```
-curl -O https://install.tunnelmole.com/xD345/install && sudo bash install
+curl -O https://install.rurylox.site/xD345/install && sudo bash install
 ```
 The script will detect your OS and install the right version.
 
 #### Windows
-1. [Download tmole.exe](https://tunnelmole.com/downloads/tmole.exe)
+1. [Download tmole.exe](https://rurylox.site/downloads/tmole.exe)
 2. Put it somewhere in your [PATH](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows).
 
 I'd like to have the install script for Linux and Mac also working in Cygwin and Mingw. Let me know if you're willing to help test!.
@@ -61,8 +61,8 @@ To install Tunnelmole with NPM you need to have NodeJS installed. If not, get it
 Here's what it should look like
 ```
 $ tmole 8080
-http://evgtkh-ip-49-145-166-122.tunnelmole.net is forwarding to localhost:8080
-https://evgtkh-ip-49-145-166-122.tunnelmole.net is forwarding to localhost:8080
+http://evgtkh-ip-49-145-166-122.rurylox.site is forwarding to localhost:8080
+https://evgtkh-ip-49-145-166-122.rurylox.site is forwarding to localhost:8080
 ```
 
 Now, just go to either one of the URLs shown with your web browser.
@@ -73,9 +73,9 @@ The URLs are public - this means you can also share them with collaborators and 
 
 #### Custom subdomain
 Sometimes, it can be useful to have a domain that does not change frequently. To use a custom subdoman run
-`tmole 8080 as <yourdomain>.tunnelmole.net`.
+`tmole 8080 as <yourdomain>.rurylox.site`.
 
-If you are using the hosted service (which is the default) and you want to use a custom subdomain you'll need to purchase a subscription [Learn More](https://dashboard.tunnelmole.com?utm_source=tunnelmoleClientGithub).
+If you are using the hosted service (which is the default) and you want to use a custom subdomain you'll need to purchase a subscription [Learn More](https://dashboard.rurylox.site?utm_source=tunnelmoleClientGithub).
 
 Otherwise, you can self host. To learn more go to the [Tunnelmole Service](https://github.com/robbie-cahill/tunnelmole-service/) GitHub repo.
 
@@ -106,7 +106,7 @@ Once the module is imported you can start tunnelmole with the code below, changi
 const url = tunnelmole({
     port: 3000
 });
-// url = https://idsq6j-ip-157-211-195-169.tunnelmole.net
+// url = https://idsq6j-ip-157-211-195-169.rurylox.site
 ```
 
 Tunnelmole will start in the background and you'll see output in the console log similar to the Tunnelmole command line application which will include the public URLs that now point to your application. The function is `async` and won't block execution of the rest of your code.
@@ -115,11 +115,11 @@ If you want to use a custom subdomain, you could also pass the domain as an opti
 ```javascript
 const url = tunnelmole({
     port: 3000,
-    domain: '<your tunnelmole domain e.g. mysite.tunnelmole.net>'
+    domain: '<your rurylox domain e.g. mysite.rurylox.site>'
 });
-// url = mydomain.tunnelmole.net
+// url = mydomain.rurylox.site
 ```
-Again if you are using the hosted service (which is the default) and you want to use a custom subdomain you'll need to purchase a subscription [Learn More](https://dashboard.tunnelmole.com?utm_source=tunnelmoleClientGithub).
+Again if you are using the hosted service (which is the default) and you want to use a custom subdomain you'll need to purchase a subscription [Learn More](https://dashboard.rurylox.site?utm_source=tunnelmoleClientGithub).
 
 Otherwise, you can self host. To learn more about this option go to the [Tunnelmole Service](https://github.com/robbie-cahill/tunnelmole-service/) GitHub repo.
 #### Suppress output/logs
@@ -194,7 +194,7 @@ By default, Launch Tunnelmole invokes Tunnelmole to forward to port 8001 locally
 ### How it works
 ![How Tunnelmole Works](https://raw.githubusercontent.com/robbie-cahill/tunnelmole-client/main/docs/img/how-tunnelmole-works.png)
 
-Tunnelmole sets up a persistent Websocket connection between your device and a host machine running the [tunnelmole service](https://github.com/robbie-cahill/tunnelmole-service/). By default, this is the hosted tunnlemole service at [https://tunnelmole.com](https://tunnelmole.com?utm_source=tmoleClientGithubRepo) but you can self host.
+Tunnelmole sets up a persistent Websocket connection between your device and a host machine running the [tunnelmole service](https://github.com/robbie-cahill/tunnelmole-service/). By default, this is the hosted tunnlemole service at [https://rurylox.site](https://rurylox.site?utm_source=tmoleClientGithubRepo) but you can self host.
 
 As requests come in to the public URL, these requests are sent back through the Websocket connection to the client running on your machine.
 
@@ -263,7 +263,7 @@ However, you can always self host Tunnelmole and remove the code that adds this 
 Read the above "Contributing" section to learn how to contribute.
 
 ### Links and resources
-- Project Website with guides and documentation: [https://tunnelmole.com](https://tunnelmole.com?utm_source=tmoleClientGithubRepo)
+- Project Website with guides and documentation: [https://rurylox.site](https://rurylox.site?utm_source=tmoleClientGithubRepo)
 - A good overview of Websocket: [https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 
 #### Uninstallation
