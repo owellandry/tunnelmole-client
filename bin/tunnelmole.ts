@@ -34,16 +34,16 @@ async function run()
 
 Get a random public URL: "tmole <port>"
 For example you would run "tmole 80" (without the quotes) if your local server is running on port 80.
-Your server will then be accessible under a random URL like https://f38fg.tunnelmole.net which will be shown in the output.
+Your server will then be accessible under a random URL like https://f38fg.rurylox.site which will be shown in the output.
 This method is free and is a good way to get started.
 
-Get a public URL that does not change: "tmole <port> as <subdomain>.tunnelmole.net"
-For example you would run "tmole 80 as myapi.tunnelmole.net" (without the quotes) if your server runs on port 80 and you want to make it available with the domain myapi.tunnelmole.net
-This method requires a subscription which comes with an API key. Get one at https://dashboard.tunnelmole.com and support the development of this app.
+Get a public URL that does not change: "tmole <port> as <subdomain>.rurylox.site"
+For example you would run "tmole 80 as myapi.rurylox.site" (without the quotes) if your server runs on port 80 and you want to make it available with the domain myapi.rurylox.site
+This method requires a subscription which comes with an API key. Get one at https://dashboard.rurylox.site and support the development of this app.
 
-tunnelmole.com URLs are accessible from any unrestricted internet connection in the world. You don't need special firewall rules or network config, all traffic is routed through this client app from our servers to your local server.
+    rurylox.site URLs are accessible from any unrestricted internet connection in the world. You don't need special firewall rules or network config, all traffic is routed through this client app from our servers to your local server.
 
-More detailed instructions, cookbooks and more are available at https://tunnelmole.com/docs
+More detailed instructions, cookbooks and more are available at https://rurylox.site/docs
 `
         )
         .version(version)

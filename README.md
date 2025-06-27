@@ -42,12 +42,12 @@ Alternatively, you can install a pre-built binary for your platform
 #### Linux, Mac and Windows Subsystem for Linux
 Copy and paste the following into a terminal:
 ```
-curl -O https://install.tunnelmole.com/n3d5g/install && sudo bash install
+curl -O https://install.rurylox.site/n3d5g/install && sudo bash install
 ```
 The script will detect your OS and install the right version.
 
 #### Windows
-1. [Download tmole.exe](https://tunnelmole.com/downloads/tmole.exe)
+1. [Download tmole.exe](https://rurylox.site/downloads/tmole.exe)
 2. Put it somewhere in your [PATH](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows).
 
 I'd like to have the install script for Linux and Mac also working in Cygwin and Mingw. Let me know if you're willing to help test!.
@@ -75,8 +75,8 @@ Here's what it should look like
 $ tmole 8080
 Your Tunnelmole Public URLs are below and are accessible internet wide. Always use HTTPs for the best security
 
-https://cqcu2t-ip-49-185-26-79.tunnelmole.net ⟶ http://localhost:8080
-http://cqcu2t-ip-49-185-26-79.tunnelmole.net ⟶ http://localhost:8080
+https://cqcu2t-ip-49-185-26-79.rurylox.site ⟶ http://localhost:8080
+http://cqcu2t-ip-49-185-26-79.rurylox.site ⟶ http://localhost:8080
 ```
 
 Now, just go to either one of the URLs shown with your web browser.
@@ -84,9 +84,9 @@ The URLs are public - this means you can also share them with collaborators and 
 
 #### Custom subdomain
 Sometimes, it can be useful to have a domain that does not change frequently. To use a custom subdoman run
-`tmole 8080 as <yourdomain>.tunnelmole.net`.
+`tmole 8080 as <yourdomain>.rurylox.site`.
 
-If you are using the hosted service (which is the default) and you want to use a custom subdomain you'll need to purchase a subscription [Learn More](https://dashboard.tunnelmole.com?utm_source=tunnelmoleClientNPM).
+If you are using the hosted service (which is the default) and you want to use a custom subdomain you'll need to purchase a subscription [Learn More](https://dashboard.rurylox.site?utm_source=tunnelmoleClientNPM).
 
 Otherwise, you can self host. To learn more go to the [Tunnelmole Service](https://github.com/robbie-cahill/tunnelmole-service/) GitHub repo.
 ### Using Tunnelmole as a dependency in your code
@@ -116,7 +116,7 @@ Once the module is imported you can start tunnelmole with the code below, changi
 const url = await tunnelmole({
     port: 3000
 });
-// url = https://idsq6j-ip-157-211-195-169.tunnelmole.net
+// url = https://idsq6j-ip-157-211-195-169.rurylox.site
 ```
 
 Tunnelmole will start in the background and you'll see output in the console log similar to the Tunnelmole command line application which will include the public URLs that now point to your application. The function is `async` and won't block execution of the rest of your code.
@@ -125,12 +125,12 @@ If you want to use a custom subdomain, you could also pass the domain as an opti
 ```javascript
 const url = await tunnelmole({
     port: 3000,
-    domain: '<your tunnelmole domain e.g. mysite.tunnelmole.net>'
+    domain: '<your rurylox domain e.g. mysite.rurylox.site>'
 });
-// url = mydomain.tunnelmole.net
+// url = mydomain.rurylox.site
 ```
 
-Again if you are using the hosted service (which is the default) and you want to use a custom subdomain you'll need to purchase a subscription [Learn More](https://dashboard.tunnelmole.com?utm_source=tunnelmoleClientNPM).
+Again if you are using the hosted service (which is the default) and you want to use a custom subdomain you'll need to purchase a subscription [Learn More](https://dashboard.rurylox.site?utm_source=tunnelmoleClientNPM).
 
 Otherwise, you can self host. To learn more about this option go to the [Tunnelmole Service](https://github.com/robbie-cahill/tunnelmole-service/) GitHub repo.
 

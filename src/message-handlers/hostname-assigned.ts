@@ -37,6 +37,6 @@ export default async function hostnameAssigned(message: HostnameAssignedMessage,
 }
 
 const printSharingNetwork = (displayNetworkName: string, network: string, encodedHttpsUrl: string) => {
-    const shareUrl = `https://dashboard.tunnelmole.com/share/${network}/${encodedHttpsUrl}`;
+    const shareUrl = `https://dashboard.rurylox.site/share/${network}/${encodedHttpsUrl}`;
     console.info(`${displayNetworkName}: ${chalk.blue.bold(shareUrl)}`);
 }

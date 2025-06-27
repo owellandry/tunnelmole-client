@@ -40,7 +40,7 @@ const connect = (options: Options): HostipWebSocket => {
             domain = domain.replace('https://', '');
 
             if (!validator.isURL(domain)) {
-                console.info("Invalid domain name passed, please use the format mydomain.tunnelmole.net");
+                console.info("Invalid domain name passed, please use the format mydomain.rurylox.site");
                 return Promise.resolve();
             }
 
